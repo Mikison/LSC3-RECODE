@@ -1,0 +1,243 @@
+items:
+  hearts:
+    heart_tier1:
+      item:
+        name: '<color:#ff0000>Heart<gray> [Tier <white>I<gray>]'
+        lore:
+          - ''
+          - '<gray>Zjedz, aby zyskac <color:#ff0000>❤ <gray>dodatkowe serduszko'
+          - ''
+          - '<red>»<gray> Mozesz krasc serca od innych graczy'
+          - '<gray>poprzez zabijanie ich, albo kup je w sklepie'
+          - ''
+          - '<gold>[Nacisnij, aby uzyc]'
+          - ''
+        material: 'PLAYER_HEAD'
+        customHeadTexture: '2869bdd9a8f77eeff75d8f67ed0322bd9c16dd494972314ed707dd10a3139a58'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+          - 'HIDE_DESTROYS'
+          - 'HIDE_DYE'
+          - 'HIDE_POTION_EFFECTS'
+          - 'HIDE_UNBREAKABLE'
+      settings:
+        hearts: 1
+        cooldown: 15
+        dropChance: 85
+      effects:
+    heart_tier2:
+      item:
+        name: '<color:#ff0000>Heart<gray> [Tier <white>II<gray>]'
+        lore:
+          - ''
+          - '<gray>Zjedz, aby zyskac <color:#ff0000>❤❤ <gray>dodatkowe serduszko'
+          - ''
+          - '<red>»<gray> Mozesz krasc serca od innych graczy'
+          - '<gray>poprzez zabijanie ich, albo kup je w sklepie'
+          - ''
+          - '<gold>[Nacisnij, aby uzyc]'
+          - ''
+        material: 'PLAYER_HEAD'
+        customHeadTexture: '13c0e4cd46ec1a53f646017d49c0661a0c120708a3363b378a40a2e6a2c1fba4'
+
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+          - 'HIDE_DESTROYS'
+          - 'HIDE_DYE'
+          - 'HIDE_POTION_EFFECTS'
+          - 'HIDE_UNBREAKABLE'
+      settings:
+        hearts: 2
+        cooldown: 30
+        dropChance: 10
+      effects:
+    heart_tier3:
+      item:
+        name: '<color:#ff0000>Heart<gray> [Tier <white>III<gray>]'
+        lore:
+          - ''
+          - '<gray>Zjedz, aby zyskac <color:#ff0000>❤❤❤ <gray>dodatkowe serduszko'
+          - ''
+          - '<red>»<gray> Mozesz krasc serca od innych graczy'
+          - '<gray>poprzez zabijanie ich, albo kup je w sklepie'
+          - ''
+          - '<gold>[Nacisnij, aby uzyc]'
+          - ''
+        material: 'PLAYER_HEAD'
+        customHeadTexture: 'cb6aca916272d9a10bbd8e039c1ac35b86fb06aa8bdae5899da3d6e3100ef65d'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+          - 'HIDE_DESTROYS'
+          - 'HIDE_DYE'
+          - 'HIDE_POTION_EFFECTS'
+          - 'HIDE_UNBREAKABLE'
+      settings:
+        hearts: 3
+        cooldown: 60
+        dropChance: 5
+      effects:
+  beacons:
+    # Placeholders: {PLAYER} = player bound to beacon for resurrection.
+
+    beacon_Tier1:
+      item:
+        name: '<color:#b5abaa>Revive Beacon [Tier I]'
+        lore:
+          - ''
+          - '<color:#b5abaa>· <white>Information:'
+          - ' <color:#827a79>» <gray>Revive Time: <color:#b5abaa>120s'
+          - ' <color:#827a79>» <gray>Cooldown: <color:#b5abaa>2h'
+          - ' <color:#827a79>» <gray>Durability: <color:#b5abaa>5 breaks'
+          - ''
+          - '<color:#b5abaa>· <white>Usage:'
+          - ' <color:#827a79>» <gray>Place this beacon down to revive an'
+          - ' <gray>eliminated player. You must protect the'
+          - ' <gray>beacon during the resurrection process!'
+          - ''
+          - '<color:#b5abaa>· <white>Bound to:'
+          - ' <color:#827a79>» <gray>{PLAYER}'
+          - ''
+          - '<color:#b5abaa>· <red><u>Warning:<reset> <gray>Location will be broadcasted upon usage!'
+          - ''
+          - '<dark_gray>[Place down to use]'
+        material: 'PLAYER_HEAD'
+        customHeadTexture: '59c4eae00bd7f39a9ad9725a1fe010f75fc7d3b096cd2c5889946ed7ca2366bd'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+      settings:
+        reviveTime: 120
+        durability: 5
+        cooldown: 7200
+        silent: false
+      effects:
+        duringResurrection:
+          effect: 'SMOKE_LARGE'
+          amount: 10
+        onFinish:
+          effect: 'EXPLOSION_LARGE'
+          amount: 5
+    beacon_Tier2:
+      item:
+        name: '<color:#6eff88>Revive Beacon [Tier II]'
+        lore:
+          - ''
+          - '<color:#6eff88>· <white>Information:'
+          - ' <color:#33a648>» <gray>Revive Time: <color:#6eff88>90s'
+          - ' <color:#33a648>» <gray>Cooldown: <color:#6eff88>2.5h'
+          - ' <color:#33a648>» <gray>Durability: <color:#6eff88>5 breaks'
+          - ''
+          - '<color:#6eff88>· <white>Usage:'
+          - ' <color:#33a648>» <gray>Place this beacon down to revive an'
+          - ' <gray>eliminated player. You must protect the'
+          - ' <gray>beacon during the resurrection process!'
+          - ''
+          - '<color:#6eff88>· <white>Bound to:'
+          - ' <color:#33a648>» <gray>{PLAYER}'
+          - ''
+          - '<color:#6eff88>· <red><u>Warning:<reset> <gray>Location will be broadcasted upon usage!'
+          - ''
+          - '<dark_grey>[Place down to use]'
+        material: 'PLAYER_HEAD'
+        customHeadTexture: '83a6858012b25e1e86adbf8cf06ba5d2d924b4c23fcd4d5e513cfa81242623b9'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+      settings:
+        reviveTime: 120
+        durability: 5
+        cooldown: 7200
+        silent: false
+      effects:
+        duringResurrection:
+          effect: 'SMOKE_LARGE'
+          amount: 10
+        onFinish:
+          effect: 'EXPLOSION_LARGE'
+          amount: 5
+    beacon_Tier3:
+      item:
+        name: '<color:#f5f760>Revive Beacon [Tier III]'
+        lore:
+          - ''
+          - '<color:#f5f760>· <white>Information:'
+          - ' <color:#cc983f>» <gray>Revive Time: <color:#f5f760>120s'
+          - ' <color:#cc983f>» <gray>Cooldown: <color:#f5f760>2h'
+          - ' <color:#cc983f>» <gray>Durability: <color:#f5f760>5'
+          - ''
+          - '<color:#f5f760>· <white>Usage:'
+          - ' <color:#cc983f>» <gray>Place this beacon down to revive an'
+          - ' <gray>eliminated player. You must protect the'
+          - ' <gray>beacon during the resurrection process!'
+          - ''
+          - '<color:#f5f760>· <white>Bound to:'
+          - ' <color:#cc983f>» <gray>{PLAYER}'
+          - ''
+          - '<color:#f5f760>· <red><u>Warning:<reset> <gray>Location will be broadcasted upon usage!'
+          - ''
+          - '<dark_grey>[Place down to use]'
+        material: 'PLAYER_HEAD'
+        customHeadTexture: 'e4006aa961668f3aea0dbfaf4b03f4104e03fee841d103e482be20fc937d4c70'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+      settings:
+        reviveTime: 120
+        durability: 5
+        cooldown: 7200
+        silent: false
+      effects:
+        duringResurrection:
+          effect: 'SMOKE_LARGE'
+          amount: 10
+        onFinish:
+          effect: 'EXPLOSION_LARGE'
+          amount: 5
+    beacon_Ghost:
+      item:
+        name: '<color:#e7a1ff>Revive Beacon [Ghost]'
+        lore:
+          - ''
+          - '<color:#e7a1ff>· <white>Information:'
+          - ' <color:#dab3e8>» <gray>Revive Time: <color:#dab3e8>5m'
+          - ' <color:#dab3e8>» <gray>Cooldown: <color:#dab3e8>6h'
+          - ' <color:#dab3e8>» <gray>Durability: <color:#dab3e8>1 break'
+          - ''
+          - '<color:#e7a1ff>· <white>Usage:'
+          - ' <color:#dab3e8>» <gray>Place this beacon down to revive an'
+          - ' <gray>eliminated player. You must protect the'
+          - ' <gray>beacon during the resurrection process!'
+          - ''
+          - '<color:#e7a1ff>· <white>Bound to:'
+          - ' <color:#dab3e8>» <gray>{PLAYER}'
+          - ''
+          - '<color:#e7a1ff>· <red><u>Warning:<reset> <gray>Location will be broadcasted upon usage!'
+          - ''
+          - '<dark_grey>[Place down to use]'
+        material: 'PLAYER_HEAD'
+        customHeadTexture: 'dfa13032fa939f184daa6a4e11e6f3a913e48f250498165c5665ccf49c72a140'
+        itemFlags:
+          - 'HIDE_ATTRIBUTES'
+          - 'HIDE_ENCHANTS'
+          - 'HIDE_PLACED_ON'
+      settings:
+        reviveTime: 120
+        durability: 5
+        cooldown: 7200
+        silent: false
+      effects:
+        duringResurrection:
+          effect: 'SMOKE_LARGE'
+          amount: 10
+        onFinish:
+          effect: 'EXPLOSION_LARGE'
+          amount: 5

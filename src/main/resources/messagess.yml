@@ -1,0 +1,147 @@
+messagess:
+  prefix: "<gradient:#ff1f00:#ff06b9>LifeStealCore</gradient>" #
+  EVENT_DEATH_KILLER: " <prefix> <white>» <white>You stole <red>1❤ <white>from <red><victim>"
+  EVENT_DEATH_VICTIM_PLAYER: " <prefix> <white>» <white>You lost <red>1❤ <white>to <red>{0} <gray>(<red>{1}❤<gray>)<white>!"
+  EVENT_BAN_BROADCAST: " <prefix> <white>» <red><target> <white>has been eliminated for losing all of their hearts!" #
+  EVENT_CONSUME_HEART_OVER_THRESHOLD: " <prefix> <white>» <white>You cannot consume hearts when you already have <red><amount>+<white>!"
+  EVENT_CONSUME_HEART_MAXHEARTS: " <prefix> <white>» <white>You already have maximum hearts!"
+  EVENT_CONSUME_HEART_COOLDOWN: " <prefix> <white>» <white>Wait for <red><timeleft>s <white>before consuming a heart again!"
+  EVENT_CONSUME_HEART_SUCCESS: " <prefix> <white>» <white>Consumed a {0} <white>and gained <red>{1} ❤<white>!"
+
+  ######
+
+  EVENT_BEACON_BREAK_BROKEN:  #
+    - ""
+    - " <prefix> <white>» <red><0> <white>managed to break your beacon!"
+    - ""
+  EVENT_BEACON_BREAK_NOTIFY: #
+    - ""
+    - " <prefix> <white>» <red><0> <white>damaged your beacon, <red><1> hits <white>left!"
+    - ""
+  EVENT_BEACON_BREAK_BROADCAST: #
+    - ""
+    - "<color:#ff3859><bold><underlined>RESURRECTION FAILED!"
+    - ""
+    - "<dark_red>☠ <red><0>'s <gray><italic>revive beacon was destroyed by <red><1><gray><italic>!"
+    - ""
+  EVENT_CONSUME_BEACON_NOTBOUND: " <prefix> <white>» <white>Bind the beacon to a player first! <gray>(<white>/bind<gray>)" #
+  EVENT_CONSUME_BEACON_NOTDEAD: " <prefix> <white>» <red><target> <white>is not dead, you can't use this beacon!" #
+  EVENT_CONSUME_BEACON_TOGGLED: " <prefix> <white>» <white>You cannot use revive beacons at this time!" #
+  EVENT_CONSUME_BEACON_SUCCESS: " <prefix> <white>» <white>Initiated resurrection process for <red><target><white>!" #
+  EVENT_PLACE_BEACON_ON_WALL: " <prefix> <white>» <white>Revive beacon must be placed on the ground!"
+  EVENT_CONSUME_BEACON_BROADCAST: #
+    - ""
+    - "<color:#ff3859><bold><underlined>RESURRECTION STARTED!"
+    - ""
+    - "<yellow>☠ <gray><italic>A revive beacon has been placed by<reset> <red><whoplaced><gray><italic>!"
+    - ""
+    - " <red><underlined>Location:<reset> <white><worldname> <gray>at <white><coordx><gray>, <white><coordy><gray>, <white><coordz>"
+    - ""
+  EVENT_CONSUME_BEACON_BROADCAST_REVIVE: #
+    - ""
+    - "<color:#ff3859><bold><underlined>RESURRECTION FINISHED!"
+    - ""
+    - "<green>☠ <red><revive> <gray><italic>has risen from the dead!"
+    - ""
+
+
+  #####
+
+  COMMAND_GIVEITEM_WRONGITEM: " <prefix> <white>» <white>Invalid item." #
+  COMMAND_GIVEITEM_SUCCESS_SENDER: " <prefix> <white>» <white>Successfully gave <red>x<amount> <item_name> <white>to <red><target><white>!" #
+  COMMAND_GIVEITEM_SUCCESS_SENDER_ALL: " <prefix> <white>» <white>Successfully gave <red>x<amount> <item_name> <white>to <red><count> players<white>!" #
+  COMMAND_GIVEITEM_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>Successfully gave <red>x<amount> <item_name> <white>to <red><target><white>!"
+  COMMAND_GIVEITEM_SUCCESS_SENDER_SILENT_ALL: " <prefix> <white>» <gray>[Silent] <white>Successfully gave <red>x<amount> <item_name> <white>to <red><count> players<white>!" #
+  COMMAND_GIVEITEM_SUCCESS_RECEIVER: " <prefix> <white>» <white>Received <red>x<amount> <item_name> <white>from <red><sender><white>!" #
+
+  ######
+
+  COMMAND_NO_PLAYER: " <prefix> <white>» <white>You must define a player!"
+  COMMAND_NO_VALUE: " <prefix> <white>» <white>You must define the amount of hearts!"
+  COMMAND_INVALID_VALUE: " <prefix> <white>» <white>The amount of hearts must be a positive number!" #
+  COMMAND_INVALID_PLAYER: " <prefix> <white>» <red><target> <white>is offline or could not be found!" #
+  COMMAND_PLAYER_NOT_IN_DATABASE: " <prefix> <white>» <red><target> <white>could not be found in data file!" #
+
+  #####
+
+
+  COMMAND_ADD_EXCEEDING_VALUE: " <prefix> <white>» <white>Error. <red><target> <white>already has <red><amount> hearts <white>and the cap is <red><max_amount><white>!" #
+  COMMAND_ADD_SUCCESS_SENDER: " <prefix> <white>» <white>Added <red><amount> hearts <white>to <red><target><white>!" #
+  COMMAND_ADD_SUCCESS_SENDER_ALL: " <prefix> <white>» <white>Added <red><amount> hearts <white>to <red><count> players<white>!" #
+  COMMAND_ADD_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>Added <red><amount> hearts <white>to <red><target><white>!" #
+  COMMAND_ADD_SUCCESS_SENDER_SILENT_ALL: " <prefix> <white>» <gray>[Silent] <white>Added <red><amount> hearts <white>to <red><count> players<white>!" #
+  COMMAND_ADD_SUCCESS_RECEIVER: " <prefix> <white>» <red><sender> <white>added <red><amount> hearts <white>to you!" #
+
+  ######
+
+  COMMAND_SET_EXCEEDING_VALUE: " <prefix> <white>» <white>Error. The heart cap for <red><target> <white>is set at <red><max_amount> hearts<white>! You can increase the cap with the <red>setmax <white>command!" #
+  COMMAND_SET_SUCCESS_SENDER: " <prefix> <white>» <white>Set <red><target>'s <white>hearts to <red><amount> hearts<white>!" #
+  COMMAND_SET_SUCCESS_SENDER_ALL: " <prefix> <white>» <white>Set <red><count> players' <white>hearts to <red><amount> hearts<white>!" #
+  COMMAND_SET_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>Set <red><target>'s <white>hearts to <red><amount> hearts<white>!" #
+  COMMAND_SET_SUCCESS_SENDER_SILENT_ALL: " <prefix> <white>» <gray>[Silent] <white>Set <red><count> players' <white>hearts to <red><amount> hearts<white>!" #
+  COMMAND_SET_SUCCESS_RECEIVER: " <prefix> <white>» <red><sender> <white>set your hearts to <red><amount> hearts<white>!" #
+
+  ######
+
+  COMMAND_SETMAX_SUCCESS_SENDER: " <prefix> <white>» <white>Set <red><target>'s <white>max hearts to <red><amount> hearts<white>!" #
+  COMMAND_SETMAX_SUCCESS_SENDER_ALL: " <prefix> <white>» <white>Set <red><count> players' <white>max hearts to <red><amount> hearts<white>!" #
+  COMMAND_SETMAX_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>Set <red><target>'s <white>max hearts to <red><amount> hearts<white>!" #
+  COMMAND_SETMAX_SUCCESS_RECEIVER: " <prefix> <white>» <red><sender> <white>set your max hearts to <red><amount> hearts<white>!" #
+
+  ######
+
+  COMMAND_REMOVE_EXCEEDING_VALUE: " <prefix> <white>» <white>Error. <red><target> <white>has only <red><amount> hearts <white>left!" #
+  COMMAND_REMOVE_SUCCESS_SENDER: " <prefix> <white>» <white>Removed <red><amount> hearts <white>from <red><target><white>!" #
+  COMMAND_REMOVE_SUCCESS_SENDER_ALL: " <prefix> <white>» <white>Removed <red><amount> hearts <white>from <red><count><white> players!" #
+  COMMAND_REMOVE_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>Removed <red><amount> hearts <white>from <red><target><white>!" #
+  COMMAND_REMOVE_SUCCESS_SENDER_SILENT_ALL: " <prefix> <white>» <gray>[Silent] <white>Removed <red><amount> hearts <white>from <red><count> players<white>!" #
+  COMMAND_REMOVE_SUCCESS_RECEIVER: " <prefix> <white>» <red><sender> <white>removed <red><amount> heart(s) <white>from you!" #
+
+  #####
+
+  COMMAND_ELIMINATE_ALREADY_ELIMINATED: " <prefix> <white>» <red><target> <white>is already eliminated!" #
+  COMMAND_ELIMINATE_SUCCESS_SENDER: " <prefix> <white>» <white>You have manually eliminated <red><target><white>!" #
+  COMMAND_ELIMINATE_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>You have manually eliminated <red><target><white>!" #
+
+  ####
+
+  COMMAND_REVIVE_ALREADY_REVIVED: " <prefix> <white>» <red><target> <white>is already alive!" #
+  COMMAND_REVIVE_SUCCESS_SENDER: " <prefix> <white>» <white>You have manually revived <red><target><white>!" #
+  COMMAND_REVIVE_SUCCESS_SENDER_SILENT: " <prefix> <white>» <gray>[Silent] <white>You have manually revived <red><target><white>!" #
+
+  #####
+
+  COMMAND_STATUS_SUCCESS_SENDER:
+    - ""
+    - " <prefix> <white>» <white>Viewing profile for <red><target><white>:"
+    - ""
+    - " <red>· <gray>Eliminated: <iseliminated><white>"
+    - " <red>· <gray>Ban Time: <white><time>"
+    - ""
+
+  ####
+
+  COMMAND_TOGGLEREVIVES_NO_INPUT: " <prefix> <white>» <white>You must define true or false!" #
+  COMMAND_TOGGLEREVIVES_INVALID_INPUT: " <prefix> <white>» <white>Your input is invalid, choose from <red>true <white>or <red>false<white>!" #
+  COMMAND_TOGGLEREVIVES_ENABLED: " <prefix> <white>» <white>You have <green>enabled <white>revive beacons!"  #
+  COMMAND_TOGGLEREVIVES_DISABLED: " <prefix> <white>» <white>You have <red>disabled <white>revive beacons!" #
+  COMMAND_TOGGLEREVIVES_STATUS_OFF: " <prefix> <white>» <white>Beacons are currently <red>disabled!" #
+  COMMAND_TOGGLEREVIVES_STATUS_ON: " <prefix> <white>» <white>Beacons are currently <green>enabled!" #
+
+
+  ####
+
+  COMMAND_BIND_NO_BEACON: " <prefix> <white>» <white>You must be holding a revive beacon when using this command!" #
+  COMMAND_BIND_INVALID_SYNTAX: " <prefix> <white>» <white>Command syntax is wrong. <gray>(<white>/bind [player]<gray>)" #
+  COMMAND_BIND_SUCCESS: " <prefix> <white>» <white>Bound this beacon to <red><target><white>!" #
+
+  ####
+
+  COMMAND_RELOAD: #
+    - ""
+    - " <prefix> <white>» <white>Reloaded configuration files."
+    - ""
+
+
+
+
